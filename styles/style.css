@@ -144,7 +144,7 @@ html, body {
 }
 
 .about__page .technologies .tech__list .tech {
-  padding: 1em 2em;
+  padding: 1em;
   cursor: pointer;
 }
 
@@ -504,15 +504,255 @@ html, body {
   width: 10em;
 }
 
+.contact__page .media__footer .media .media__icon {
+  padding: .5em;
+  cursor: pointer;
+}
+
 .contact__page p {
   padding: 3em;
   text-align: center;
   color: var(--primary);
 }
 
-/*  GRID OF THREE  */
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 1450px) {
+  .about__page .heading {
+    padding: 0;
+  }
+  .about__page .heading h1 {
+    padding: 1em;
+  }
+  .about__page .technologies .tech__list .tech {
+    padding: 0.6em;
+  }
+  .about__page .process__container {
+    width: 80%;
+    padding: 1em 0em;
+  }
+  .about__page .process__container .plan .process__illustration {
+    width: 17em;
+  }
+  .about__page .process__container .design .process__illustration {
+    width: 17em;
+  }
+  .about__page .process__container .develop .process__illustration {
+    width: 17em;
+  }
+  .about__page .process__container .arrow p {
+    font-size: 1.5em;
+  }
+  .about__page .steps .steps__illustration {
+    width: 20em;
+  }
+  .catalogue__page .heading {
+    padding: 0;
+  }
+  .catalogue__page .heading h1 {
+    padding: 1em;
+    font-size: 3em;
+  }
+  .catalogue__page .items {
+    width: 60%;
+    padding: 1em;
+  }
+  .catalogue__page .col {
+    height: 23em;
+  }
+  .catalogue__page .col .item__description {
+    padding: 1em 2em;
+  }
+  .contact__page .container {
+    width: 40%;
+  }
+  .contact__page .media__footer {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about__page .technologies .tech__list .tech {
+    padding: 0.6em;
+  }
+  .about__page .process__container {
+    width: 90%;
+    padding: 5em 0em;
+  }
+  .about__page .process__container .plan .process__illustration {
+    width: 10em;
+  }
+  .about__page .process__container .design .process__illustration {
+    width: 10em;
+  }
+  .about__page .process__container .develop .process__illustration {
+    width: 10em;
+  }
+  .about__page .process__container .arrow p {
+    font-size: 1.5em;
+  }
+  .about__page .steps .steps__illustration {
+    width: 20em;
+  }
+  .catalogue__page .items {
+    width: 65%;
+    padding: 1em;
+  }
+  .catalogue__page .col {
+    height: 20em;
+  }
+  .catalogue__page .col .item__description {
+    padding: 1em 2em;
+  }
+  .contact__page .container {
+    width: 60%;
+  }
+  .contact__page .media__footer {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing__page .landing__page__container {
+    padding-top: 5em;
+  }
+  .landing__page .landing__page__container .logo__container .logo {
+    width: 20em;
+  }
+  .landing__page .landing__page__container .text h1 {
+    font-size: 1.5em;
+  }
+  .landing__page .landing__page__container .text h3 {
+    font-size: 1em;
+  }
+  .about__page .technologies .tech__list .tech {
+    padding: 0px;
+  }
+  .about__page .process__container {
+    width: 90%;
+    padding: 5em 0em;
+  }
+  .about__page .process__container .plan .process__illustration {
+    width: 10em;
+  }
+  .about__page .process__container .design .process__illustration {
+    width: 10em;
+  }
+  .about__page .process__container .develop .process__illustration {
+    width: 10em;
+  }
+  .about__page .process__container .arrow p {
+    font-size: 1em;
+  }
+  .catalogue__page .items {
+    width: 80%;
+    padding: 1em;
+  }
+  .catalogue__page .col {
+    height: 20em;
+  }
+  .catalogue__page .col .item__description {
+    padding: 1em 2em;
+  }
+  .contact__page .container {
+    width: 60%;
+  }
+  .contact__page .media__footer {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .landing__page .landing__page__container {
+    width: 95%;
+  }
+  .landing__page .landing__page__container .logo__container {
+    padding: 3em 0em;
+  }
+  .landing__page .landing__page__container .logo__container .logo {
+    width: 25em;
+  }
+  .landing__page .landing__page__container .text h1 {
+    font-size: 1em;
+    letter-spacing: 3px;
+    padding: 2em 0em 2em 0em;
+  }
+  .landing__page .landing__page__container .text h3 {
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    padding: 2em 0em 2em 0em;
+  }
+  .landing__page .landing__page__container .contact__button {
+    width: 30%;
+  }
+  .about__page .heading {
+    padding: 1em;
+  }
+  .about__page .heading h1 {
+    font-size: 2em;
+  }
+  .about__page .technologies {
+    width: 90%;
+  }
+  .about__page .technologies .tech__list {
+    padding: 1em;
+  }
+  .about__page .technologies .tech__list .tech {
+    padding: 3px;
+  }
+  .about__page .technologies h2 {
+    font-size: 1em;
+  }
+  .about__page .process__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .about__page .process__container .plan {
+    text-align: center;
+  }
+  .about__page .process__container .plan .process__illustration {
+    width: 12em;
+  }
+  .about__page .process__container .design {
+    text-align: center;
+  }
+  .about__page .process__container .design .process__illustration {
+    width: 12em;
+  }
+  .about__page .process__container .develop {
+    text-align: center;
+  }
+  .about__page .process__container .develop pa
+.process__illustration {
+    width: 12em;
+  }
+  .about__page .process__container .arrow {
+    display: none;
+  }
+  .about__page .steps {
+    display: none;
+  }
+  .catalogue__page .heading {
+    padding: 0;
+  }
+  .catalogue__page .heading h1 {
+    padding: 1em;
+    font-size: 2em;
+  }
+  .contact__page .heading {
+    padding: 0;
+  }
+  .contact__page .heading h1 {
+    padding: 1em;
+    font-size: 2em;
+  }
+  .contact__page .container {
+    width: 80%;
+  }
+  .contact__page .media__footer {
+    width: 80%;
+  }
   .col {
     margin: 1% 0 1% 0%;
   }

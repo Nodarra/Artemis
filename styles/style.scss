@@ -132,7 +132,7 @@ html, body{
             padding: 2em;
 
             .tech{
-                padding: 1em 2em;
+                padding: 1em;
                 cursor: pointer;
             }
         }
@@ -449,6 +449,13 @@ html, body{
     .logo{
         width: 10em;
     }
+
+    .media{
+        .media__icon{
+            padding: .5em;
+            cursor: pointer;
+        }
+    }
   }
 
   p{
@@ -458,12 +465,383 @@ html, body{
   }
 }
 
+@media screen and (max-width: 1450px) {
+    .about__page{
+        .heading {
+            padding: 0;
 
-/*  GRID OF THREE  */
+            h1{
+                padding: 1em;
+            }
+        }
+
+        .technologies{
+            .tech__list{
+                .tech{
+                    padding: 0.6em;
+                }
+            }
+        }
+
+        .process__container{
+            width: 80%;
+            padding: 1em 0em;
+
+            .plan{
+                .process__illustration{
+                    width: 17em;
+                }
+            }
+
+            .design{
+                .process__illustration{
+                    width: 17em;
+                }
+            }
+
+            .develop{
+                .process__illustration{
+                    width: 17em;
+                }
+            }
+
+            .arrow{
+                p{
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        .steps{
+            .steps__illustration{
+                width: 20em;
+            }
+        }
+    }
+
+    .catalogue__page{
+        .heading {
+            padding: 0;
+
+            h1{
+                padding: 1em;
+                font-size: 3em;
+            }
+        }
+
+        .items{
+            width: 60%;
+            padding: 1em;
+        }
+
+        .col{
+            height: 23em;
+
+            .item__description{
+                padding: 1em 2em;
+            }
+        }
+    }
+
+    .contact__page{
+        .container{
+            width: 40%;
+        }
+
+        .media__footer{
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about__page{
+        .technologies{
+            .tech__list{
+                .tech{
+                    padding: 0.6em;
+                }
+            }
+        }
+
+        .process__container{
+            width: 90%;
+            padding: 5em 0em;
+
+            .plan{
+                .process__illustration{
+                    width: 10em;
+                }
+            }
+
+            .design{
+                .process__illustration{
+                    width: 10em;
+                }
+            }
+
+            .develop{
+                .process__illustration{
+                    width: 10em;
+                }
+            }
+
+            .arrow{
+                p{
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        .steps{
+            .steps__illustration{
+                width: 20em;
+            }
+        }
+    }
+
+    .catalogue__page{
+        .items{
+            width: 65%;
+            padding: 1em;
+        }
+
+        .col{
+            height: 20em;
+
+            .item__description{
+                padding: 1em 2em;
+            }
+        }
+    }
+
+    .contact__page{
+        .container{
+            width: 60%;
+        }
+
+        .media__footer{
+            width: 25%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .landing__page {
+        .landing__page__container{
+            padding-top: 5em;
+            .logo__container{
+                .logo{
+                    width: 20em;
+                }
+            }
+
+            .text{
+                h1{
+                    font-size: 1.5em;
+                }
+
+                h3{
+                    font-size: 1em;
+                }
+            } 
+        } 
+    }
+
+    .about__page{
+        .technologies{
+            .tech__list{
+                .tech{
+                    padding: 0px;
+                }
+            }
+        }
+
+        .process__container{
+            width: 90%;
+            padding: 5em 0em;
+
+            .plan{
+                .process__illustration{
+                    width: 10em;
+                }
+            }
+
+            .design{
+                .process__illustration{
+                    width: 10em;
+                }
+            }
+
+            .develop{
+                .process__illustration{
+                    width: 10em;
+                }
+            }
+
+            .arrow{
+                p{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    .catalogue__page{
+        .items{
+            width: 80%;
+            padding: 1em;
+        }
+
+        .col{
+            height: 20em;
+
+            .item__description{
+                padding: 1em 2em;
+            }
+        }
+    }
+
+    .contact__page{
+        .container{
+            width: 60%;
+        }
+
+        .media__footer{
+            width: 50%;
+        }
+    }
+}
 
 
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-	.col {  margin: 1% 0 1% 0%; }
+@media only screen and (max-width: 430px) {
+    .landing__page{
+
+        .landing__page__container{
+            width: 95%;
+
+            .logo__container{
+                padding: 3em 0em;
+
+                .logo{
+                    width: 25em;
+                }
+            }
+
+            .text{
+                h1{
+                    font-size: 1em;
+                    letter-spacing: 3px;
+                    padding: 2em 0em 2em 0em;
+                }
+
+                h3{
+                    font-size: 0.7em;
+                    letter-spacing: 3px;
+                    padding: 2em 0em 2em 0em;
+                }
+            }
+
+            .contact__button{
+                width: 30%;
+            }
+        }
+    }
+
+    .about__page{
+        .heading{
+            padding: 1em;
+            h1{
+                font-size: 2em;
+            }
+        }
+
+        .technologies {
+            width: 90%;
+            .tech__list{
+                padding: 1em;
+                .tech{
+                    padding: 3px;
+                }
+            }
+
+            h2{
+                font-size: 1em;
+            }
+        }
+
+        .process__container{
+            flex-direction: column;
+            padding: 0;
+
+            .plan{
+                text-align: center;
+
+                .process__illustration{
+                    width: 12em;
+                }
+            }
+
+            .design{
+                text-align: center;
+
+                .process__illustration{
+                    width: 12em;
+                }
+            }
+
+            .develop{
+                text-align: center;
+                pa
+
+                .process__illustration{
+                    width: 12em;
+                }
+            }
+
+            .arrow{
+                display: none;
+            }
+        }
+
+        .steps{
+            display: none;
+        }
+    }
+
+    .catalogue__page{
+        .heading {
+            padding: 0;
+
+            h1{
+                padding: 1em;
+                font-size: 2em;
+            }
+        }
+    }
+
+    .contact__page{
+        .heading {
+            padding: 0;
+
+            h1{
+                padding: 1em;
+                font-size: 2em;
+            }
+        }
+
+        .container{
+            width: 80%;
+        }
+
+        .media__footer{
+            width: 80%;
+        }
+    }
+
+    .col {  margin: 1% 0 1% 0%; }
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
+
+
+
