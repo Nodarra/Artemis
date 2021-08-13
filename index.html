@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,17 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Artemis</title>
 </head>
+
 <body>
+    <!--Intro animation div-->
+    <div class="intro">
+        <h1 class="logo-header">
+            <span class="logo-i">W</span><span class="logo-i">e</span><span class="logo-i">l</span><span
+                class="logo-i">c</span><span class="logo-i">o</span><span class="logo-i">m</span><span
+                class="logo-i">e</span>
+        </h1>
+    </div>
+
     <div class="landing__page">
         <div class="landing__page__container">
             <div class="logo__container">
@@ -35,7 +46,7 @@
         <div class="heading">
             <h1>ABOUT US</h1>
         </div>
-        
+
         <div class="technologies">
             <h2>TECHNOLOGIES THAT WE EMPLOY</h2>
             <div class="tech__list">
@@ -173,43 +184,44 @@
             <h1>CONTACT</h1>
         </div>
         <div class="container">
-            <form id="my-form" action="https://formspree.io/f/mvovaajg" method="POST" enctype="multipart/form-data" name="EmailForm">
-              <div class="row100">
-                  <div class="col">
-                      <div class="inputBox">
-                          <input type="text" name="name" required="required">
-                          <span class="text">Name</span>
-                          <span class="line"></span>
-                      </div>
-                  </div>
-    
-                  <div class="col">
-                      <div class="inputBox">
-                          <input type="text" name="email" required="required">
-                          <span class="text">Mail</span>
-                          <span class="line"></span>
-                      </div>
-                  </div>
-              </div>
-    
-              <div class="row100">
-                  <div class="col">
-                      <div class="inputBox textarea">
-                          <textarea required="required" name="message"></textarea>
-                          <span class="text">Message</span>
-                          <span class="line"></span>
-                      </div>
-                  </div>
-              </div>
-    
-              <div class="status" id="status"></div>
-    
-              <div class="submit-btn">
-                  <div class="col">
-                      <button class="btn" type="submit">Send</button>
-                  </div>
-              </div>
-          </form>
+            <form id="my-form" action="https://formspree.io/f/mvovaajg" method="POST" enctype="multipart/form-data"
+                name="EmailForm">
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="name" required="required">
+                            <span class="text">Name</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="email" required="required">
+                            <span class="text">Mail</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox textarea">
+                            <textarea required="required" name="message"></textarea>
+                            <span class="text">Message</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status" id="status"></div>
+
+                <div class="submit-btn">
+                    <div class="col">
+                        <button class="btn" type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
         </div>
         <div class="media__footer">
             <img class="logo" src="./media/Gold-01.png">
@@ -227,4 +239,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
