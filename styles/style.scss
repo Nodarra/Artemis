@@ -62,7 +62,7 @@ body {
 }
 .landing__page {
   width: 100vw;
-  height: auto;
+  height: 100vh;
   margin-bottom: 5em;
 
   .landing__page__container {
@@ -264,7 +264,7 @@ body {
     text-align: center;
     background-color: #fff;
     color: #000;
-    height: 22em;
+    height: 25em;
     -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
     h3 {
