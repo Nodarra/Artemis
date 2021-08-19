@@ -24,8 +24,7 @@ window.addEventListener("DOMContentLoaded", () => {
   }, 2000);
 });
 
-
-window.scroll(function(){
+window.scroll(function () {
   $(".header").css("opacity", 1 - $(window).scrollTop() / 900);
 });
 
@@ -33,23 +32,21 @@ const navigation = document.querySelector(".navigation");
 const sectionOne = document.querySelector(".landing__page");
 
 const sectionOneOptions = {
-  rootMargin: "-100px 0px 0px 0px"
-}
+  rootMargin: "-100px 0px 0px 0px",
+};
 
-const sectionOneObserver = new IntersectionObserver(
-  function(
-      entries,
-      sectionOneObserver
-  ) {
-      entries.forEach(entry => {
-          if(!entry.isIntersecting){
-              navigation.classList.add("nav-scrolled")
-          } else {
-              navigation.classList.remove("nav-scrolled")
-          }
-      })
-  }, sectionOneOptions
-);
+const sectionOneObserver = new IntersectionObserver(function (
+  entries,
+  sectionOneObserver
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      navigation.classList.add("nav-scrolled");
+    } else {
+      navigation.classList.remove("nav-scrolled");
+    }
+  });
+},
+sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
-
