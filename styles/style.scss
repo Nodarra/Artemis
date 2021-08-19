@@ -6,7 +6,8 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-&:root {
+
+:root {
   --background: #000;
   --primary: #ffff00;
   --secondary: #ff6600;
@@ -17,16 +18,13 @@ html {
   padding: 0;
   background-color: var(--background);
   color: var(--text);
-  -ms-scroll-snap-type: y proximity;
-  scroll-snap-type: y proximity;
+
 }
 body {
   margin: 0;
   padding: 0;
   background-color: var(--background);
   color: var(--text);
-  -ms-scroll-snap-type: y proximity;
-  scroll-snap-type: y proximity;
 }
 .intro {
   position: fixed;
@@ -64,17 +62,17 @@ body {
 }
 .landing__page {
   width: 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
-  overflow: hidden;
+  height: auto;
+  margin-bottom: 5em;
+
   .landing__page__container {
     margin: auto;
     width: 80%;
     .logo__container {
       text-align: center;
-      padding: 5em 3em 3em 3em;
+      padding: 3em 3em 3em 3em;
       .logo {
-        width: 30em;
+        width: 20em;
       }
     }
     .text {
@@ -84,7 +82,8 @@ body {
       text-align: center;
       h1 {
         padding: 1em 0;
-        letter-spacing: 10px;
+        font-size: 2em;
+        letter-spacing: 8px;
       }
       h3 {
         letter-spacing: 5px;
@@ -140,9 +139,7 @@ body {
 }
 .about__page {
   width: 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
-  overflow: hidden;
+
   .heading {
     padding: 2em;
     text-align: center;
@@ -221,7 +218,7 @@ body {
       }
     }
     .process__illustration {
-      width: 25em;
+      width: 15em;
     }
     .second {
       width: 21em;
@@ -231,15 +228,13 @@ body {
     padding: 3em;
     text-align: center;
     .steps__illustration {
-      width: 30em;
+      width: 25em;
     }
   }
 }
 .catalogue__page {
   width: 100vw;
   height: auto;
-  scroll-snap-align: start;
-  overflow: hidden;
   .heading {
     padding: 5em 3em 5em 3em;
     text-align: center;
@@ -252,7 +247,7 @@ body {
   }
   .items {
     margin: auto;
-    width: 40%;
+    width: 55%;
     .items__img {
       width: 100%;
     }
@@ -314,8 +309,6 @@ body {
 .contact__page {
   width: 100vw;
   height: auto;
-  scroll-snap-align: start;
-  overflow: hidden;
   .heading {
     padding: 5em;
     text-align: center;
@@ -456,6 +449,7 @@ body {
     pointer-events: none;
   }
   .inputBox.textarea {
+    overflow: hidden;
     position: relative;
     width: 100%;
     height: 100px;
@@ -495,7 +489,7 @@ body {
   .media__footer {
     text-align: center;
     margin: auto;
-    width: 15%;
+    width: 20%;
     .logo {
       width: 10em;
       margin-top: 1.2rem;
@@ -515,6 +509,7 @@ body {
 }
 @media screen and (max-width: 1450px) {
   .landing__page {
+    height: fit-content;
     .landing__page__container {
       .logo__container {
         padding-top: 1em;
@@ -594,15 +589,8 @@ body {
   }
 }
 @media screen and (max-width: 1024px) {
-  html {
-    -ms-scroll-snap-type: none;
-    scroll-snap-type: none;
-  }
-  body {
-    -ms-scroll-snap-type: none;
-    scroll-snap-type: none;
-  }
   .landing__page {
+    height: fit-content;
     .landing__page__container {
       .logo__container {
         padding-top: 1em;
