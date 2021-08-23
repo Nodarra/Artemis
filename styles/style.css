@@ -194,6 +194,10 @@ body {
   color: #fff;
 }
 
+.nav-btn .bx {
+  display: none;
+}
+
 .nav-link {
   color: #fff;
   text-decoration: none;
@@ -802,6 +806,30 @@ body {
 }
 
 @media only screen and (max-width: 430px) {
+  .navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #020202;
+    height: 55px;
+  }
+  .navigation .nav-btn {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    font-size: 0.9rem;
+  }
+  .navigation .nav-btn .nav-link {
+    display: none;
+    background-image: url(/media/icons/home-regular-24.png);
+  }
+  .navigation .nav-btn .nav-icon {
+    text-decoration: none;
+  }
+  .navigation .nav-btn .bx {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--primary);
+  }
   .landing__page {
     height: auto;
   }
@@ -809,7 +837,7 @@ body {
     width: 95%;
   }
   .landing__page .landing__page__container .logo__container {
-    padding: 3em 0em;
+    padding: 0.5em 0em;
   }
   .landing__page .landing__page__container .logo__container .logo {
     width: 20em;
@@ -926,6 +954,9 @@ body {
   .catalogue__page .heading h1 {
     padding: 1em;
     font-size: 2em;
+  }
+  .contact__page {
+    margin-bottom: 1rem;
   }
   .contact__page .heading {
     padding: 0;
