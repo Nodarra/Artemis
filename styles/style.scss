@@ -340,7 +340,7 @@ body {
     .team__member{
       position: relative;
       min-height: 400px;
-      height: 100%;
+      height: 25em;
 
       .team__picture{
         width: 100%;
@@ -351,13 +351,13 @@ body {
       }
   
       .portofolio__btn{
+        width: 100%;
         background-color: var(--primary);
         color: #000;
         position: absolute;
-        bottom: 1em;
-        left: 50%;
-        transform: translate(-50%);
-        padding: 5px 5px;
+        bottom: 0;
+        left: 0;
+        padding: 5px 0px;
         cursor: pointer;
         border-radius: 3px;
       }
