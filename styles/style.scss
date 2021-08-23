@@ -285,17 +285,116 @@ body {
     }
   }
 }
+
+.team__page{
+  height: 100vh;
+
+  .heading{
+    padding: 3em;
+    text-align: center;
+    h1 {
+      color: var(--primary);
+      font-size: 3em;
+    }
+  }
+
+  .team__container {
+    margin: auto;
+    width: 55%;
+  }
+
+  .team__section{
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    height: 25em;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+
+    h3 {
+      color: var(--secondary);
+    }
+    .item__description {
+      padding: 1em 4em;
+      text-align: center;
+    }
+    &:hover {
+      -webkit-transform: scale(0.95);
+      transform: scale(0.95);
+      -webkit-box-shadow: 0px 0px 20px var(--primary);
+      box-shadow: 0px 0px 20px var(--primary);
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+
+    .team__member{
+      position: relative;
+      height: 100%;
+
+      .team__picture{
+        width: 100%;
+      }
+  
+      h3{
+        padding: 0.5em;
+      }
+  
+      .portofolio__btn{
+        background-color: var(--primary);
+        color: #000;
+        position: absolute;
+        bottom: 1em;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 5px 5px;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  .group {
+    &:before {
+      content: "";
+      display: table;
+    }
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    zoom: 1;
+  }
+  .span_3_of_3 {
+    width: 100%;
+  }
+  .span_2_of_3 {
+    width: 66.13%;
+  }
+  .span_1_of_3 {
+    width: 32.26%;
+  }
+}
+
 .catalogue__page {
   width: 100vw;
   height: auto;
   .heading {
-    padding: 5em 3em 5em 3em;
+    padding: 2em;
     text-align: center;
     h1 {
       color: var(--primary);
-    }
-    h2 {
-      padding: 1em 3em 1em 3em;
+      font-size: 3em;
     }
   }
   .items {
