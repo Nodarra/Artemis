@@ -392,6 +392,7 @@ body {
 
 .team__page .col .team__member {
   position: relative;
+  min-height: 400px;
   height: 100%;
 }
 
