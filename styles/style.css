@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Intro animation */
 /*Page*/
 * {
@@ -467,6 +468,181 @@ body {
 .team__container:hover .overview {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.portfolio .box-container .box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio .box-container .box span {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: var(--background);
+}
+
+.portfolio .box-container .box .content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+}
+
+.portfolio .box-container .box:hover .content {
+  top: 0;
+  opacity: 1;
+}
+
+.portfolio .box-container .box .content h3 {
+  font-size: 2rem;
+  padding-bottom: .5rem;
+  color: var(--secondary);
+}
+
+.portfolio .box-container .box .contentp {
+  font-size: 1.5rem;
+  color: var(--background);
+}
+
+.portfolio .box-container .box::before {
+  height: 100%;
+  width: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffff;
+  -webkit-clip-path: circle(30% at 93% 0);
+          clip-path: circle(30% at 93% 0);
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.portfolio .box-container .box:hover::before {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+.portfolio {
+  /*JEDVA SAM OVO PRONAŠAO*/
+  width: 80%;
+  margin: 40px auto;
+}
+
+.portfolio .box-container .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+  width: calc(100% / 3 -20px);
+  text-align: center;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: .7rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.project__page {
+  height: 100vh;
+}
+
+.project__page .project__inner .heading {
+  padding: 2em;
+  text-align: center;
+}
+
+.project__page .project__inner .heading h1 {
+  color: var(--primary);
+  font-size: 3em;
+}
+
+.content {
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+section .title span {
+  color: var(--black-color);
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+section .title span::before,
+section .title span::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: var(--primary-color);
+  left: 0;
+  bottom: 0;
+}
+
+section .title span:after {
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box-container .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1em;
 }
 
 .catalogue__page {
@@ -1075,6 +1251,15 @@ body {
   }
   .items .section .col {
     width: 100%;
+  }
+  .box-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .box-container .box {
+    padding: 1em;
   }
   .catalogue__page {
     height: auto;

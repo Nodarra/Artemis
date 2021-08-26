@@ -382,6 +382,136 @@ body {
   transform: translateY(0);
 }
 
+.portfolio .box-container .box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.portfolio .box-container .box span{
+  position: absolute;
+  top:1rem; right: 2rem;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: var(--background);
+}
+.portfolio .box-container .box .content{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:6rem; left: 0;
+  transition-delay: .3s;
+  display: flex;
+  flex-flow:column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+} 
+.portfolio .box-container .box:hover .content{
+  top:0;
+  opacity: 1;
+}
+.portfolio .box-container .box .content h3{
+  font-size: 2rem;
+  padding-bottom: .5rem;
+  color:var(--secondary);
+}
+.portfolio .box-container .box .contentp{
+  font-size: 1.5rem;
+  color:var(--background)
+}
+.portfolio .box-container .box::before{
+  height: 100%;
+  width: 100%;
+  content: '';
+  position: absolute;
+  top:0; left: 0;
+  background: #ffff;
+  clip-path: circle(30% at 93% 0);
+  transition: .3s linear;
+}
+.portfolio .box-container .box:hover::before{
+  clip-path:circle(100%);
+}
+
+.portfolio{                                                                             /*JEDVA SAM OVO PRONAŠAO*/
+  width: 80%;
+  margin:40px auto;
+}
+
+.portfolio .box-container .box{ 
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  width: calc(100% / 3 -20px);
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0,0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+  border-radius: .7rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.project__page{
+  height: 100vh;
+  .project__inner{
+    .heading{
+      padding: 2em;
+      text-align: center;
+      h1 {
+        color: var(--primary);
+        font-size: 3em;
+      }
+    }
+  }
+}
+
+.content{
+  width: 80%;
+  margin:40px auto;
+  font-family:'Times New Roman', Times, serif;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+section .title span{
+  color:var(--black-color);
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: var(--primary-color);
+  left: 0;
+  bottom: 0;
+
+}
+section .title span:after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.box-container {
+  display: flex;  
+  .box{
+    flex: 1;
+    padding: 1em;
+  }
+}
+
 .catalogue__page {
   width: 100vw;
   height: auto;
@@ -1009,6 +1139,14 @@ body {
       width: 80%;
     }
   }
+
+  .box-container {
+    flex-direction: column;
+    .box{
+      padding: 1em;
+    }
+  }
+  
   .catalogue__page {
     height: auto;
     .items {
