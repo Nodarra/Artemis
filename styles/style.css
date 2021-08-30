@@ -29,7 +29,24 @@ body {
   color: var(--text);
 }
 
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .intro {
+  overflow-y: hidden;
   position: fixed;
   left: 0;
   top: 0;
@@ -76,6 +93,7 @@ body {
   width: 100vw;
   height: 100vh;
   margin-bottom: 5em;
+  overflow-y: hidden;
 }
 
 .landing__page .landing__page__container {
@@ -225,6 +243,7 @@ body {
 
 .about__page {
   width: 100vw;
+  overflow-y: hidden;
 }
 
 .about__page .heading {
@@ -338,6 +357,7 @@ body {
 }
 
 .team__page {
+  overflow-y: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -577,6 +597,7 @@ body {
 
 .project__page {
   height: 100vh;
+  overflow-y: hidden;
 }
 
 .project__page .project__inner .heading {
@@ -648,6 +669,7 @@ section .title span:after {
 .catalogue__page {
   width: 100vw;
   height: auto;
+  overflow-y: hidden;
 }
 
 .catalogue__page .heading {
@@ -740,6 +762,7 @@ section .title span:after {
 .contact__page {
   width: 100vw;
   height: auto;
+  overflow-y: hidden;
 }
 
 .contact__page .heading {
